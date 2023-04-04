@@ -1,0 +1,9 @@
+name: main
+on: [push]
+jobs:
+  main:
+    runs-on: [ubuntu-latest]
+    steps:
+        - run: which clang
+        - run: echo "Hello world" > foo
+        - run: cat foo
